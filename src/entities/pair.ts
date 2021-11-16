@@ -55,8 +55,9 @@ export class Pair {
       tokenAmounts[0].token.chainId,
       Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token),
       18,
-      'Cake-LP',
-      'Pancake LPs'
+      // 下面两行改成了我们social swap的LP代币 name 和 symbol
+      'SocialLP',
+      'Social LP Token'
     )
     this.tokenAmounts = tokenAmounts as [TokenAmount, TokenAmount]
   }

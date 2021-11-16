@@ -19,9 +19,11 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
+// 这个地方改成了我们测试网的工厂合约地址
+export const FACTORY_ADDRESS = '0x9d69C94c413364873Fc4B1be40026317A0b70A83'
 
-export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
+// 这个地方改成了我们测试合约工厂合约地址的的INIT_CODE_HASH
+export const INIT_CODE_HASH = '0x631a47ae543d0c9a0004eddbaf24a590f2be84300e0ea209fc434e17f128492e'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
@@ -33,8 +35,9 @@ export const THREE = JSBI.BigInt(3)
 export const FIVE = JSBI.BigInt(5)
 export const TEN = JSBI.BigInt(10)
 export const _100 = JSBI.BigInt(100)
-export const FEES_NUMERATOR = JSBI.BigInt(9975)
-export const FEES_DENOMINATOR = JSBI.BigInt(10000)
+// 改成了997 和 1000， 因为我们的手续费是 0.3%
+export const FEES_NUMERATOR = JSBI.BigInt(997)
+export const FEES_DENOMINATOR = JSBI.BigInt(1000)
 
 export enum SolidityType {
   uint8 = 'uint8',
